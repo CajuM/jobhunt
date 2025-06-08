@@ -1,0 +1,154 @@
+Delivered-To: mcaju95@gmail.com
+Received: by 2002:a05:7022:6899:b0:9f:de04:ddda with SMTP id cm25csp5952125dlb;
+        Mon, 2 Jun 2025 05:53:38 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHtsMP33EtpWLqCPDJpIGyouFswdiWL4iidLqaDOxk8Jy+TZSGIABSM1CHdkr2IPfmi1Kk1
+X-Received: by 2002:a05:6871:7390:b0:2e9:2f58:fed2 with SMTP id 586e51a60fabf-2e948c4ac34mr4569587fac.22.1748868818588;
+        Mon, 02 Jun 2025 05:53:38 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1748868818; cv=none;
+        d=google.com; s=arc-20240605;
+        b=CheIg1bgZ5HQZE0UuTepwTVQ02VhXIheKkdVwIBXQSpuXO/Jp+vRsXNu7PqxOj3iGZ
+         jQIdMHEqZIlATAtXJ7Al0AfMltn9D92QB37BHWFOORhtGgZweplmAzZhttIBMxinkIUl
+         AXtSXIgXbz6xh5JajYaFlQ2z4d/F9/6AQM65Y+2r72tdddOVLd7EnXrJk6pLywtQbC8G
+         lkWtcdKGFxzJ72vzfa3259nooxZlNufjATA3wHu5IJrcalmDNs7Pceqx92z3RLhw8Zpb
+         ASAHDXOuZ0mh55eepB/p3AdY4uopTGWGBgzRczMmL7DFNtFcs3+0opDb/0lxHt7SRBuf
+         JxCA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=date:mime-version:message-id:subject:reply-to:from:to:sender
+         :dkim-signature:dkim-signature;
+        bh=cfV9w3M1Dz/C9Dg3dr7cDvIHbSfegBRDp7E5zpwQyo8=;
+        fh=p5oHzMrDIMAL3YLSiE50eyf1GNLggZVK4sCWqfY8qTY=;
+        b=OW4nip0E3+WHBL0LJb9s8MaDVfalrBkr+Bq1bED58PipwpE6z2kATwKUaRUmWy77dv
+         jw57xkkOosAZ0u7OU3e5MQ12EvsE9wfs2V4cWW5193CiNjnSpt8nxylext4ifYBwQ7hO
+         J9qAd0tuvOOt+4g+lMQljHPPgyLvs7+dIw3UBMRp6TmXNBzdzkx0bnTVM+MplhPxPJXC
+         F5BHbNBpzZDTyjFhMdkYLFocB+dhekROhPIp7SAZ+eaI3InyeSuL8aOt0mQCgosIvs8I
+         MzEH1heetC3tRQisx1SUmGZ8CKgpkVzh6tiBGdnhiUFPiRnt8OhqJ2ju41if7HJhd9Na
+         39xw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@9elements.com header.s=pic header.b=NfQJfL8D;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b="g2r5/6Yb";
+       spf=pass (google.com: domain of bounce+6aeba8.816568-mcaju95=gmail.com@9elements.com designates 198.61.254.41 as permitted sender) smtp.mailfrom="bounce+6aeba8.816568-mcaju95=gmail.com@9elements.com";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=9elements.com
+Return-Path: <bounce+6aeba8.816568-mcaju95=gmail.com@9elements.com>
+Received: from so254-41.mailgun.net (so254-41.mailgun.net. [198.61.254.41])
+        by mx.google.com with UTF8SMTPS id 586e51a60fabf-2e906ce3eaasi5003398fac.266.2025.06.02.05.53.38
+        for <mcaju95@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 02 Jun 2025 05:53:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+6aeba8.816568-mcaju95=gmail.com@9elements.com designates 198.61.254.41 as permitted sender) client-ip=198.61.254.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@9elements.com header.s=pic header.b=NfQJfL8D;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b="g2r5/6Yb";
+       spf=pass (google.com: domain of bounce+6aeba8.816568-mcaju95=gmail.com@9elements.com designates 198.61.254.41 as permitted sender) smtp.mailfrom="bounce+6aeba8.816568-mcaju95=gmail.com@9elements.com";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=9elements.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=9elements.com; q=dns/txt; s=pic; t=1748868818; x=1748876018;
+ h=Content-Type: Date: MIME-Version: Message-ID: Subject: Subject: Reply-To: From: From: To: To: Sender: Sender: X-Feedback-Id;
+ bh=cfV9w3M1Dz/C9Dg3dr7cDvIHbSfegBRDp7E5zpwQyo8=;
+ b=NfQJfL8Di2E2326N2vR1tlbss6gu0QiHhWllua8K4+ujDL/hi/fMslYjRgJPerwlfDjVMGgaCcBKSg4rpxNTfeh+hkFpDw7qZKbG3Zjd0kTgd/dy+cyEX0Fm3L1iEE4oOb7ptoFhwJOOISjVjcB4GmeTCOgCDsQ5ctW3m0cUoOY=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1748868818; x=1748876018;
+ h=Content-Type: Date: MIME-Version: Message-ID: Subject: Subject: Reply-To: From: From: To: To: Sender: Sender: X-Feedback-Id;
+ bh=cfV9w3M1Dz/C9Dg3dr7cDvIHbSfegBRDp7E5zpwQyo8=;
+ b=g2r5/6Yb6Dd4hAQeTdclc3RxrMVZ5Z2ZHxjZ2xj+WN1bTOBZsXvWlFyS5L40HCjvw7XnlfUaLNkZFXoTOvWAnff8CSIPOxeP0OxkaqoIr/i7ajsi1oDp16pwMCK++XtS108UZpCUSUYgME6qRhdrplS6+5cChOck+RWIoj1CNQk=
+X-Mailgun-Sid: WyI3MzQxMiIsIm1jYWp1OTVAZ21haWwuY29tIiwiODE2NTY4Il0=
+X-Feedback-Id: jobs@9elements.com::571651a98032679259192fdd:mailgun
+Received: from [127.0.0.1] (ec2-3-121-59-239.eu-central-1.compute.amazonaws.com
+ [3.121.59.239]) by f213c99d11e5 with SMTP id 683d9ed29764690d7aa4ea9a; Mon,
+ 02 Jun 2025 12:53:38 GMT
+X-Mailgun-Sending-Ip-Pool-Name: 
+X-Mailgun-Sending-Ip-Pool: 
+X-Mailgun-Sending-Ip: 198.61.254.41
+Sender: jobs@9elements.com
+To: Mihai-Drosi Caju <mcaju95@gmail.com>
+From: 9elements <jobs@9elements.com>
+Reply-To: 9elements <jobs@9elements.com>
+Subject: Your application at 9elements
+Message-ID: <f0301737b036db0c65a4eb8f515c7b89@9elements.com>
+MIME-Version: 1.0
+Date: Mon, 02 Jun 2025 12:53:38 +0000
+Content-Type: multipart/alternative; boundary=FKq_Qe72
+
+--FKq_Qe72
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Mihai-Drosi,thanks again for your application and your interest in our=
+ team!=C2=A0We reviewed your CV carefully, and although, your experiences a=
+re already quite impressive at the moment we do not have the vacancy and ca=
+pacity to hire a person with your skill set.We wish you best of luck for yo=
+ur future endeavors and we hope, we have the chance to talk to you in the f=
+uture again!Best,Melina JacobProduct &amp; UX-Design9elements GmbH, Kortums=
+tra=C3=9Fe 19-21, 44787 Bochum, GermanyEmail: =C2=A0melina.jacob@9elements.=
+comPhone: =C2=A0+49 234 /=C2=A068 94 188Sitz der Gesellschaft: BochumHandel=
+sregister: Amtsgericht Bochum, HRB 17519Gesch=C3=A4ftsf=C3=BChrung: Sebasti=
+an Deutsch, Eray BasarDatenschutzhinweise nach Art. 13 DSGVO
+--FKq_Qe72
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div style=3D"color:rgb(51,51,51);font-family:Helvetica, Arial, sans-serif;=
+font-size:13px;"><span style=3D"font-size:12px;font-family:Arial, Helvetica=
+, sans-serif;">Dear Mihai-Drosi,</span></div><div style=3D"color:rgb(51,51,=
+51);font-family:Helvetica, Arial, sans-serif;font-size:13px;"><span style=
+=3D"font-family:Arial, Helvetica, sans-serif;"><span style=3D"font-size:12p=
+x;">thanks again for your application and your interest in our team!=C2=
+=A0</span></span></div><div style=3D"color:rgb(51,51,51);font-family:Helvet=
+ica, Arial, sans-serif;font-size:13px;"><span style=3D"font-family:Arial, H=
+elvetica, sans-serif;"><span style=3D"font-size:12px;"><br></span></span></=
+div><div style=3D"color:rgb(51,51,51);font-family:Helvetica, Arial, sans-se=
+rif;font-size:13px;"><span style=3D"font-family:Arial, Helvetica, sans-seri=
+f;"><span style=3D"font-size:12px;">We reviewed your CV carefully, and alth=
+ough, your experiences are already quite impressive at the moment we do not=
+ have the vacancy and capacity to hire a person with your skill set.</span>=
+</span></div><div style=3D"color:rgb(51,51,51);font-family:Helvetica, Arial=
+, sans-serif;font-size:13px;"><span style=3D"font-family:Arial, Helvetica, =
+sans-serif;"><span style=3D"font-size:12px;"><br></span></span></div><div s=
+tyle=3D"color:rgb(51,51,51);font-family:Helvetica, Arial, sans-serif;font-s=
+ize:13px;"><span style=3D"font-family:Arial, Helvetica, sans-serif;"><span =
+style=3D"font-size:12px;">We wish you best of luck for your future endeavor=
+s and we hope, we have the chance to talk to you in the future again!</span=
+></span></div><div style=3D"color:rgb(51,51,51);font-family:Helvetica, Aria=
+l, sans-serif;font-size:13px;"><span style=3D"font-family:Arial, Helvetica,=
+ sans-serif;"><span style=3D"font-size:12px;">Best,</span></span></div><br>=
+<div style=3D"color:rgb(255,255,255);font-family:Helvetica;font-size:12px;f=
+ont-style:normal;font-weight:normal;text-transform:none;text-decoration:non=
+e;"><div style=3D"color:rgb(0,0,0);text-transform:none;text-decoration:none=
+;"><div style=3D"color:rgb(0,0,0);text-transform:none;text-decoration:none;=
+"><div style=3D"color:rgb(0,0,0);text-transform:none;"><div><div style=3D"c=
+olor:rgb(0,0,0);font-family:Helvetica;font-size:12px;font-style:normal;font=
+-weight:normal;text-transform:none;"><div><div><div style=3D"font-size:smal=
+l;"><strong><span style=3D"font-family:Arial, Helvetica, sans-serif;">Melin=
+a Jacob</span></strong></div><div><div style=3D"color:rgb(0,0,0);font-style=
+:normal;font-weight:normal;text-transform:none;font-family:'-webkit-standar=
+d';font-size:small;"><span style=3D"font-size:11px;font-family:Arial, Helve=
+tica, sans-serif;">Product &amp; UX-Design</span></div><span style=3D"font-=
+size:12.8px;font-family:Arial, Helvetica, sans-serif;"><img alt=3D"logo-sig=
+nature.png" style=3D"font-size:12.8px;" src=3D"http://static.9elements.com/=
+logo-signature.png"></span><div style=3D"color:rgb(0,0,0);font-family:Helve=
+tica;font-size:12px;font-style:normal;font-weight:normal;text-transform:non=
+e;"><span style=3D"font-family:Arial, Helvetica, sans-serif;"><br></span><d=
+iv style=3D"font-family:'-webkit-standard';font-size:small;"><div style=3D"=
+color:rgb(34,34,34);font-family:arial, sans-serif;font-size:12.8px;"><span =
+style=3D"color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-siz=
+e:11px;background-color:rgb(255,255,255);">9elements GmbH, Kortumstra=C3=
+=9Fe 19-21, 44787 Bochum, Germany</span></div><span style=3D"font-size:11px=
+;font-family:Arial, Helvetica, sans-serif;">Email: =C2=A0<a href=3D"mailto:=
+melina.jacob@9elements.com">melina.jacob@9elements.com</a><br></span><span =
+style=3D"color:rgb(34,34,34);font-family:Arial, Helvetica, sans-serif;font-=
+size:11px;">Phone: =C2=A0</span><span style=3D"font-size:11px;font-family:A=
+rial, Helvetica, sans-serif;"><u><a href=3D"tel:+492346894188">+49 234 /=
+=C2=A068 94 188</a></u></span><div style=3D"color:rgb(34,34,34);font-family=
+:arial, sans-serif;font-size:12.8px;"><span style=3D"font-family:Arial, Hel=
+vetica, sans-serif;"><br></span></div></div></div><div style=3D"color:rgb(0=
+,0,0);font-family:Helvetica;font-style:normal;font-weight:normal;text-trans=
+form:none;"><span style=3D"font-family:Arial, Helvetica, sans-serif;"><br><=
+/span><div style=3D"color:rgb(34,34,34);background-color:rgb(255,255,255);l=
+ine-height:11px;"><span style=3D"font-family:Arial, Helvetica, sans-serif;"=
+>Sitz der Gesellschaft: Bochum</span><br><span style=3D"font-family:Arial, =
+Helvetica, sans-serif;">Handelsregister: Amtsgericht Bochum, HRB 17519<br>G=
+esch=C3=A4ftsf=C3=BChrung: Sebastian Deutsch, Eray Basar</span><br><span st=
+yle=3D"font-family:Arial, Helvetica, sans-serif;"><br></span><a href=3D"htt=
+ps://9elements.com/privacy"><span style=3D"font-family:Arial, Helvetica, sa=
+ns-serif;">Datenschutzhinweise nach Art. 13 DSGVO</span></a></div></div></d=
+iv></div></div></div></div></div></div></div></div>
+--FKq_Qe72--
+
